@@ -1,0 +1,26 @@
+{
+  "news": "News",
+  "profile": "Profile",
+  "home": "home",
+  "login": "login",
+  "logout": "Logout",
+  "loading": "Loading",
+  "load": "Load More",
+  "description": "Description",
+
+  "title": {
+    "name": "Name",
+    "description": "My name is",
+    "love": ", I love my job",
+    "close": "Close",
+    "authorization": "Authorization"
+  },
+
+  "descriptionHome": "This is a site about news. We took the data about the posts",
+
+  "errorLogin": "  You do not identify yourself. Invalid login or password",
+  "label": {
+    "user": "Username",
+    "password": "Password"
+  }
+}

@@ -1,0 +1,25 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modalLoginContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modalWrapper {
+  border-radius: 30px;
+  background-color: #0f2467;
+  padding: 20px;
+}
+
+.buttonLogin {
+  background-color: darkblue;
+  color: white;
+  width: 200px;
+  height: 30px;
+  cursor: pointer;
+}
