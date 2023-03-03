@@ -1,9 +1,8 @@
 import React, { useEffect } from "react";
 import { useTranslation } from "react-i18next";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { RouterProvider } from "react-router-dom";
 import { routes } from "./routes";
-import { RootState } from "./store";
 import { authActions } from "./store/auth";
 import { Storages } from "./types/enum/storage.enum";
 
@@ -23,7 +22,15 @@ function App() {
         isLoggedIn: isLoggedIn || false,
       })
     );
-    if (i18n.languages[0] === "en-EN") i18n.changeLanguage("en");
+    i18n.changeLanguage("en");
+    localStorage.setItem(
+      Storages.AUTH,
+      JSON.stringify({
+        username: "admin",
+        password: "12345",
+        isLoggedIn: false,
+      })
+    );
   }, []);
 
   return <RouterProvider router={routes} />;
