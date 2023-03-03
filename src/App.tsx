@@ -23,14 +23,16 @@ function App() {
       })
     );
     i18n.changeLanguage("en");
-    localStorage.setItem(
-      Storages.AUTH,
-      JSON.stringify({
-        username: "admin",
-        password: "12345",
-        isLoggedIn: false,
-      })
-    );
+    if (isLoggedIn === "false") {
+      localStorage.setItem(
+        Storages.AUTH,
+        JSON.stringify({
+          username: "admin",
+          password: "12345",
+          isLoggedIn: false,
+        })
+      );
+    }
   }, []);
 
   return <RouterProvider router={routes} />;
